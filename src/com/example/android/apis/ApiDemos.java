@@ -33,6 +33,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import com.example.android.apis.beefeng.utils.FpsService;
+
 public class ApiDemos extends ListActivity {
 
     @Override
@@ -50,6 +52,8 @@ public class ApiDemos extends ListActivity {
                 android.R.layout.simple_list_item_1, new String[] { "title" },
                 new int[] { android.R.id.text1 }));
         getListView().setTextFilterEnabled(true);
+        
+//        startService(new Intent(this,FpsService.class));
     }
 
     protected List getData(String prefix) {

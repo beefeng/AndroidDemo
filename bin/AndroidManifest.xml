@@ -22,11 +22,17 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.android.apis">
 
+     <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="8" />
+     
     <uses-permission android:name="android.permission.READ_CONTACTS" />
     <uses-permission android:name="android.permission.WRITE_CONTACTS" />
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    
     <uses-permission android:name="android.permission.SET_WALLPAPER" />
 
     <!-- We will request access to the camera, saying we require a camera
@@ -217,6 +223,8 @@
 
         <service android:name=".app.LocalService" />
 
+        <service android:name="com.example.android.apis.beefeng.utils.FpsService" />
+        
         <activity android:name=".app.LocalServiceController" android:label="@string/activity_local_service_controller">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -1746,20 +1754,66 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".text.ReplaceText" android:label="Text/ReplaceText">
+        <activity android:name="com.example.android.apis.beefeng.textview.ReplaceText" android:label="beefeng/TextView/ReplaceText">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
         
-         <activity android:name=".text.ClickableImage" android:label="Text/ClickableImage">
+         <activity android:name="com.example.android.apis.beefeng.textview.SimpleGridLayout" android:label="beefeng/TextView/SimpleGridLayout">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
         
+        <activity android:name="com.example.android.apis.beefeng.listview.WebViewInListVIew" android:label="beefeng/ListView/WebViewInListVIew">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="com.example.android.apis.beefeng.listview.MyPullToRefreshListViewActivity" android:label="beefeng/ListView/MyPullToRefreshListView">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        
+        
+        
+         <activity android:name="com.example.android.apis.beefeng.listview.ListHeaderFooter" android:label="beefeng/ListView/ListHeaderFooter">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        
+      <activity android:name=".beefeng.textview.ClickableImagey" android:label="beefeng/TextView/ClickableImage">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+       
+      <activity android:name=".beefeng.textview.EditTextTest" android:label="beefeng/TextView/EditTextTest">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        
+      
+      <activity android:name=".beefeng.textview.ClickLinkInListView" android:label="beefeng/TextView/ClickLinkInListView">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        
+      
         <activity android:name=".text.Marquee" android:label="Text/Marquee">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -50,5 +50,6 @@ public class DialogActivity extends Activity {
         
         getWindow().setFeatureDrawableResource(Window.FEATURE_LEFT_ICON, 
                 android.R.drawable.ic_dialog_alert);
+        
     }
 }

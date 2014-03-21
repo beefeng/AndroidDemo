@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <com.example.android.apis.beefeng.listview.MyPullRefreshListView 
+        android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbarFadeDuration="0"
+        android:fadeScrollbars="false"
+        android:scrollbars="vertical">
+        
+    </com.example.android.apis.beefeng.listview.MyPullRefreshListView>
+
+</LinearLayout>
